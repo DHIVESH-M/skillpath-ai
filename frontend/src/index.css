@@ -1,0 +1,7 @@
+@tailwind base; @tailwind components; @tailwind utilities;
+body { @apply font-display text-ink bg-cream; background-image: radial-gradient(circle at 10% 0%, #E9DDF8 0, transparent 40%), radial-gradient(circle at 90% 20%, #D9EEFF 0, transparent 40%); background-attachment: fixed; }
+.card { @apply bg-white rounded-3xl p-5 border-2 border-ink/10 shadow-[0_6px_0_rgba(32,33,42,0.08)]; }
+.btn { @apply inline-flex items-center justify-center gap-2 rounded-2xl px-5 py-3 font-extrabold uppercase tracking-wide text-sm border-2 border-ink/20 border-b-4 active:border-b-2 active:translate-y-[2px] transition disabled:opacity-50 disabled:pointer-events-none; }
+.btn-primary { @apply bg-lavender hover:bg-[#dccbf3]; } .btn-mint { @apply bg-mint hover:bg-[#cdebd0]; } .btn-pink { @apply bg-pink hover:bg-[#ffc5de]; }
+.input { @apply w-full rounded-2xl border-2 border-ink/15 px-4 py-3 font-bold bg-white outline-none focus:border-ink/40; }
+.bar { @apply h-4 rounded-full bg-ink/10 overflow-hidden; } .bar > div { @apply h-full rounded-full bg-gradient-to-r from-pink to-lavender transition-all duration-700; }

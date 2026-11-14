@@ -1,0 +1,2 @@
+export const Loader = ({ text = 'Pip is thinking…' }) => <div className="grid place-items-center py-16 font-extrabold text-ink/60"><div className="text-5xl animate-bounce">🤖</div>{text}</div>
+export const ErrorBox = ({ error, retry }) => error ? <div className="card !bg-pink/60 font-bold flex items-center justify-between gap-3"><span>😬 {error}</span>{retry && <button className="btn btn-primary" onClick={retry}>Retry</button>}</div> : null
